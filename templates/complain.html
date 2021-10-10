@@ -7,7 +7,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="complain.css">
 	<title>Login Page</title>
 </head>
 
@@ -22,18 +22,42 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav" >
     <a class="nav-item nav-link active mx-2" href="#" style="color: white;">Home </a>
-    <a class="nav-item nav-link active mx-2" href="complain.html" style="color: white;">Complain </a>
+    <a class="nav-item nav-link active mx-2" href="#" style="color: white;">Complain </a>
     <a class="nav-item nav-link active mx-2" href="login.html" style="color: white;">Admin Login </a>
     <a class="nav-item nav-link active mx-2" href="search.html" style="color: white;">Complain Status </a>
     </div>
   </div>
   </nav>
 
-  <!-- Body Goes Here -->
-<div class="search row align-items-center" style="margin-left: 35%;">
-  <input type="text" class="form-control form-rounded" placeholder="Search" style="width: 500px; height: 80px; font-size:35px; color: #008080;"/>
+<!-- Body Goes Here -->
+<div class="container-fluid" style="margin: 90px 33% 90px; max-width: 50%;">
+        <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+            <div class="container-fluid">
+                <div class="row">
+                    <h2>Complain</h2>
+                </div>
+                <div class="row">
+                    <form control="" class="form-group">
+                        <div class="row">
+                            <input type="text" name="username" id="username" class="form__input" placeholder="Name">
+                        </div>
+                        <div class="row">
+                            <input type="phonenumber" name="Number" id="number" class="form__input" placeholder="Number">
+                        </div>
+                        <div class="row">
+                            <input type="complain" name="complain" id="complain" class="form__input" placeholder="Complain">
+                        </div>
+                        
+                        <div class="row button">
+                            <input type="submit" value="Submit" class="btn">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </div>
-<button type="button" class="btn searchicon">Search</button>
 
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4" >
