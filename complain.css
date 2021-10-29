@@ -5,6 +5,9 @@
 	margin: 5em auto;
 	display: flex;
 }
+.form-main{
+	margin: 100px 33% 100px; max-width: 50%;
+}
 .company__info{
 	background-color: #008080;
 	border-top-left-radius: 20px;
@@ -19,7 +22,7 @@
 .fa-android{
 	font-size:3em;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
 	.main-content{width: 90%;}
 	.company__info{
 		display: none;
@@ -28,10 +31,12 @@
 		border-top-left-radius:20px;
 		border-bottom-left-radius:20px;
 	}
+	.form-main{
+		margin: 0px auto 0px; 
+		max-width: 90%;
+	}
 }
-@media screen and (min-width: 642px) and (max-width:800px){
-	.main-content{width: 70%;}
-}
+
 .row > h2{
     text-align: center;
 	color:#008080;
