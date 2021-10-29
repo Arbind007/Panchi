@@ -1,0 +1,30 @@
+.form-rounded{
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px  #008080;
+}
+
+.search{
+    margin-top: 15%;
+}
+
+.searchicon{
+    margin-top: 2%;
+    margin-left: 48%;
+    margin-bottom: 15%;
+    background-color: #008080;
+    border:2px solid #008080;
+    color:white;
+    border-radius: 50px;
+    font-size:25px;
+    padding : 10px 24px;
+}
+
+.searchicon:hover{
+    background-color: white;
+    color: #008080;
+}
+
+.searchicon:active {
+    vertical-align: top;
+    padding: 8px 13px 6px;
+}

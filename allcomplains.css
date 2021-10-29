@@ -1,0 +1,28 @@
+.form__input{
+	border:0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid #008080;
+	margin-right: -80px;
+	outline:none;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border-bottom-color: #008080;	 
+    background-color: #008080;
+    color: white;
+	
+}
+
+.resolved{
+    color: #008080;
+    background-color: white;
+    border:1px solid #008080 ;
+}
+
+.resolved:hover{
+    color: white;
+    background-color: #008080;
+}
+.true{
+    background-color: rgba(255,0,0,0.3) ;
+}
