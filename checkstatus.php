@@ -46,11 +46,11 @@ $tb=$db->complain;
 
 
 <form action="status.php" class="main" method="POST" >
-<div class="search row align-items-center" style="margin-left: 35%;">
-    <input type="text" placeholder="Search" name="complaint" id="complaint" class=" form-control form-rounded" style="width: 500px; height: 80px; font-size:35px; color: #008080;">
-    </div>
-    <input type="submit" value="submit" class="btn searchicon">
-    </form>
+<div class="search row align-items-center" >
+    <input type="text" placeholder="Search" name="complaint" id="complaint" class=" form-control form-rounded input" style="width: 500px;  color: #008080;">
+</div>
+<input type="submit" value="submit" class="btn searchicon">
+</form>
 
 
 

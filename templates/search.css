@@ -6,9 +6,16 @@
 .search{
     margin-top: 15%;
     margin-left: 35%;
+    
+}
+
+.input{
+    height: 80px;
+    font-size:35px
 }
 
 .searchicon{
+    
     margin-top: 2%;
     margin-left: 48%;
     margin-bottom: 15%;
@@ -44,10 +51,14 @@
             color:white;
             border-radius: 50px;
             font-size:25px;
-            padding : 10px 24px;
+            padding : 5px 24px;
         }
         .search{
         margin-left: 25%;
         width: 50%;
+        }
+        .input{
+            height: 40px;
+            font-size:25px;
         }
     }

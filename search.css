@@ -5,9 +5,17 @@
 
 .search{
     margin-top: 15%;
+    margin-left: 35%;
+    
+}
+
+.input{
+    height: 80px;
+    font-size:35px
 }
 
 .searchicon{
+    
     margin-top: 2%;
     margin-left: 48%;
     margin-bottom: 15%;
@@ -28,3 +36,29 @@
     vertical-align: top;
     padding: 8px 13px 6px;
 }
+
+
+
+    @media screen and (max-width: 800px) {
+
+        .searchicon{
+            margin-top: 5%;
+            margin-left: 40%;
+            align-items: center;
+            margin-bottom: 10%;
+            background-color: #008080;
+            border:2px solid #008080;
+            color:white;
+            border-radius: 50px;
+            font-size:25px;
+            padding : 5px 24px;
+        }
+        .search{
+        margin-left: 25%;
+        width: 50%;
+        }
+        .input{
+            height: 40px;
+            font-size:25px;
+        }
+    }
