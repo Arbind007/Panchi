@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complain</title>
     <?php
+	session_start();
 require 'vendor/autoload.php';
 $client = new MongoDB\Client(
     'mongodb+srv://harsh:harsh@cluster0.rohs6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
@@ -14,7 +14,6 @@ $client = new MongoDB\Client(
 $db = $client->complain;
 $tb=$db->complain;
 /*$result = $tb->insertOne( [ 'name' => 'Hinterland', 'brewery' => 'BrewDog' ] );
-
 echo "Inserted with Object ID '{$result->getInsertedId()}'";*/
 
 ?>
@@ -34,6 +33,27 @@ input[type="checkbox"]
     cursor:pointer;
   }
   </style>
+	
+	  <?php  
+    function getIPAddress() {  
+    //whether ip is from the share internet  
+     if(!empty($_SERVER['HTTP_CLIENT_IP'])) {  
+                $ip = $_SERVER['HTTP_CLIENT_IP'];  
+        }  
+    //whether ip is from the proxy  
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {  
+                $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];  
+     }  
+//whether ip is from the remote address  
+    else{  
+             $ip = $_SERVER['REMOTE_ADDR'];  
+     }  
+     return $ip;  
+}  
+$ip = getIPAddress();  
+$_SESSION["ip"]=$ip;
+
+?>  
 </head>
 <body>
 
@@ -89,7 +109,7 @@ input[type="checkbox"]
 </div>
 
 
-<div class="container-fluid form-main">
+<div class="container-fluid form-main" >
         <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
             <div class="container-fluid">
                 <div class="row">
@@ -113,7 +133,7 @@ input[type="checkbox"]
 </div>
 <div class="row">
   <label for="emergency" style="display:inline-block; width:50%; margin-right:0px;" >Need assistance on the spot?</label>
-  <input type="checkbox" name="emergency"  id="emergency" style="width:5%; display:inline-block; margin-left:-50px; padding:0px;">
+  <input type="checkbox" name="emergency"  id="emergency" style="width:5%; display:inline-block; padding:0px;">
 </div>
 
 <div class="row button">
@@ -170,5 +190,3 @@ input[type="checkbox"]
 </footer>
 </body>
 </html>
-
-
